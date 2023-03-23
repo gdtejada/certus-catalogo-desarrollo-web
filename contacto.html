@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1 style ="font-size: 2em; color: red;">Best Buy</h1> <!--Titulo 1-->
+        <h2>Seguridad, Calidad, y Garantia</h2> <!--Titulo 2 slogan-->
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <p><a href="index.html">Volver atras</a></p>
+    </nav>
+
+    <!-- Cuerpo principal -->
+    <main>
+
+        <!-- Formulario de contacto -->
+        <section id="formContacto">
+            <h3>Escribenos Ahora.</h3>
+
+            <!-- Formulario -->
+            <form action="contactoRegistro.html" method="get">
+                <div>
+                    <label for="txtName"> Ingrese su Nombre</label>
+                    <input type="text" name="txtName" id="txtName" maxlength="50" required>
+                </div>
+
+                <div>
+                    <label for="txtApellido"> Ingrese su Apellido</label>
+                    <input type="text" name="txtApellido" id="txtApellido" maxlength="54" autocomplete="off">
+                </div>
+
+                <div>
+                    <label for="txtEmail"> Ingrese su Correo Electronico</label>
+                    <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength="128">
+                </div>
+
+                <div>
+                    <label for="numphone"> Ingrese su Telefono</label>
+                    <input type="tel" name="numphone" id="numphone" autocomplete="off" maxlength="9">
+                </div>
+
+                <div>
+                    <label for="txtsubject"> Seleccione su Asunto</label>
+                    <select name="txtsubject" id="txtsubject" required>
+                        <option value="">Seleccione una opcion...</option>
+                        <option value="comprarMayor"> Comprar productos por mayor</option>
+                        <option value="consultaDevolucion"> Consulta para devolucion de producto</option>
+                        <option value="comsultaGeneral"> Hacer consulta General</option>
+                    </select>
+                </div>
+
+                <!-- TextArea / Cuerpo de texto -->
+
+                <div>
+                    <label for="bodydetail"> Ingrese su mensaje</label>
+                    <textarea name="bodydetail" id="bodydetail" cols="30" rows="10" required></textarea>
+                </div>
+
+                <!-- input checkbox -->
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo"> Autorizo el envio de publicidad e informacion comercial </label>
+                </div>
+
+                <!-- inpuy submit -->
+
+                <div>
+                    <input type="submit" value="Enviar">
+                    
+                </div>
+                
+            </form>
+
+        </section>
+        
+         <!-- Datos de contacto -->
+         <section id="ubicanos">
+            <p>Av. Los Alamos de Punta Hermosa<br>
+                Pachacamac - Lima - Perú
+            </p>
+            <p>Télefono: 01 680 9999 / 999 555 555</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.1864154293971!2d-77.04790679054719!3d-11.92201336373708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d04f023f0141%3A0xf6d82d0bf769c756!2sMinizool%C3%B3gico%20Club%20Sinchi%20Roca!5e0!3m2!1ses!2spe!4v1679537287496!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>
+
+</body>
+</html>
