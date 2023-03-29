@@ -1,0 +1,79 @@
+/* Fuentes Tipograficas  */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Diseño General */
+body {
+    font-family: 'ubuntu', sans-serif;
+    margin: 0px;
+}
+
+/* Encabezado */
+header {
+    margin: 0px;
+    background-color: #E93F01;
+    padding-top: 30px;  
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header > h1 {    
+    font-size: 3em;
+    font-family: 'alkatra', cursive;
+    margin: 0px;
+    text-align: center;
+}
+
+header > h2 {    
+    font-size: 1.5em;
+    margin: 0px;
+    text-align: center;
+}
+
+/* Navegacion */
+nav > ul {
+    margin: 0;
+    background-color: #0455BF;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 10px 20px;   
+}
+
+nav > ul > li:hover {
+    background-color: #F56727;
+}
+
+nav > ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Cuerpo Principal  */
+main {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seccion catalogo */
+section#catalogo {
+    text-align: center;
+}
+
+/* Articulos */
+article {
+    width: 24% ;
+    max-width: 260px;
+    display: inline-block;
+    min-width: 200px;   
+}
+
+picture > img {
+    width: 100%;
+}
