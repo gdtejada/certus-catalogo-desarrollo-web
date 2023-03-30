@@ -54,11 +54,23 @@ nav > ul > li > a {
     text-decoration: none;
 }
 
+/* Notificacion */
+#notificacion {
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    background-color: gold;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 /* Cuerpo Principal  */
 main {
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
+    background-color: papayawhip;
+    padding-top: 30px;
 }
 
 /* Seccion catalogo */
@@ -69,11 +81,37 @@ section#catalogo {
 /* Articulos */
 article {
     width: 24% ;
-    max-width: 260px;
+    max-width: 300px;
     display: inline-block;
     min-width: 200px;   
+    margin: 8px;
+    border: 2px #d7d7d7 solid;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-picture > img {
+.imgProduct {
     width: 100%;
+}
+
+.precioOriginal {
+    font-size: 1.5em;
+    color: burlywood;
+    text-decoration: line-through;
+}
+
+.precioDescuento {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.precioFinal {
+    font-size: 2em;
+    color: firebrick;
+    font-weight: bold;
+}
+
+article > p {
+    line-height: 180%;
 }
