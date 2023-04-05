@@ -1,198 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
 
-     <!-- Agregar hoja de estilo  -->
-    <link rel="stylesheet" href="estilo.css">
- 
+    <!-- Cargar la libreria de bootstrap  -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <title>Catalogo Triple Hash</title>
-</head> 
+</head>
+
 <body>
     <!-- Encabezado -->
-    <header>
+    <header class="text-white bg-dark text-center p-4">
         <h1>Triple Hash</h1> <!--Titulo 1-->
         <h2>Seguridad, Calidad, y Garantia</h2> <!--Titulo 2 slogan-->
-        
     </header>
-    
+
     <!-- Navigation -->
-    <nav>
-        <!-- Lista desordenada -->
-        <ul>
-            <!-- Items de lista -->
-            <li><a href="index.html" target="_blank" >Inicio</a><!-- Anchor (a) --></li>
-            <li><a href="About.html" target="_blank">Quienes somos</a></li>
-            <li><a href="contacto.html" target="_blank">Contactenos</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-success" type="submit">Carrito</button>
+                </form>
+            </div>
+        </div>
     </nav>
+    
 
     <!-- Notificacion -->
     <div id="notificacion">Ventas de producto catalogo Marzo 2023</div>
-   
+
     <!-- parte principal    -->
-    <main>
+    <main class="container">
 
         <!-- Seccion de catalogo -->
-        <section id="catalogo">
+        <section id="catalogo" class="row">
 
             <!-- Articulo 1 -->
-            <article>
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Xiaomi Camara Web Full Hd 1080p.webp" alt="camara web">
+                    <img class="img-fluid" src="img/Xiaomi Camara Web Full Hd 1080p.webp" alt="camara web">
                 </picture>
                 <h3>Xiaomi Camara Web Full HD 1080p</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 220.00</span> <span class="precioDescuento">-50%</span>
                     <br><span class="precioFinal">S/ 109.00</span>
-                </p>   
-                <button>Agregar al carrito</button>           
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 2 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Cámara web 1080p para PC con Microfono.webp" alt="camara web">
+                    <img class="img-fluid" src="img/Cámara web 1080p para PC con Microfono.webp" alt="camara web">
                 </picture>
                 <h3>Cámara web 1080p para PC con Microfono</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 120.00</span> <span class="precioDescuento">-66%</span>
                     <br><span class="precioFinal">S/ 40.00</span>
-                </p>   
-                <button>Agregar al carrito</button>                
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 3 -->
-            <article>
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Cooler Para Laptop de Aluminio Deep Cool N9 Plateado.webp" alt="cooler para laptop">
+                    <img class="img-fluid" src="img/Cooler Para Laptop de Aluminio Deep Cool N9 Plateado.webp"
+                        alt="cooler para laptop">
                 </picture>
                 <h3>Cooler Para Laptop de Aluminio Deep Cool</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 215.90</span> <span class="precioDescuento">-22%</span>
                     <br><span class="precioFinal">S/ 167.90</span>
-                </p>   
-                <button>Agregar al carrito</button>               
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 4 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Teclado Mecanico Gamer Xtrike Me GK-980 Keyboard 104 Teclas.webp" alt="teclado mecanico">
+                    <img class="img-fluid" src="img/Teclado Mecanico Gamer Xtrike Me GK-980 Keyboard 104 Teclas.webp"
+                        alt="teclado mecanico">
                 </picture>
                 <h3>Teclado Mecanico Gamer Xtrike Me GK-980 Keyboard</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 219.00</span> <span class="precioDescuento">-31%</span>
                     <br><span class="precioFinal">S/ 149.90</span>
-                </p>      
-                <button>Agregar al carrito</button>            
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 5 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Mouse Ergonomico Vertical inalambrico RECARGABLE 2.4Ghz, USB 3.0.webp" alt="mouse ergonomico">
+                    <img class="img-fluid"
+                        src="img/Mouse Ergonomico Vertical inalambrico RECARGABLE 2.4Ghz, USB 3.0.webp"
+                        alt="mouse ergonomico">
                 </picture>
                 <h3>Mouse Ergonomico Vertical inalambrico RECARGABLE </h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 98.00</span> <span class="precioDescuento">-54%</span>
                     <br><span class="precioFinal">S/ 44.50</span>
-                </p>   >    
-                <button>Agregar al carrito</button>            
+                </p> >
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 6 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Adaptador Conversor Convertidor Hdmi A Vga Audio Aux Video.webp" alt="Adaptador conversor convertidor">
+                    <img class="img-fluid" src="img/Adaptador Conversor Convertidor Hdmi A Vga Audio Aux Video.webp"
+                        alt="Adaptador conversor convertidor">
                 </picture>
                 <h3>Adaptador Conversor Convertidor Hdmi A Vga Audio</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 49.00</span> <span class="precioDescuento">-59%</span>
                     <br><span class="precioFinal">S/ 20.00</span>
-                </p>   
-                <button>Agregar al carrito</button>               
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
-           <!-- Articulo 7 -->
-           <article>                
+            <!-- Articulo 7 -->
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Mochila porta laptop viaje USB Truper.webp" alt="Mochila porta laptop">
+                    <img class="img-fluid" src="img/Mochila porta laptop viaje USB Truper.webp"
+                        alt="Mochila porta laptop">
                 </picture>
                 <h3>Mochila porta laptop viaje USB Truper</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 265.00</span> <span class="precioDescuento">-35%</span>
                     <br><span class="precioFinal">S/ 169.90</span>
-                </p>     
-                <button>Agregar al carrito</button>            
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 8 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/HUB USB 4 Puertos USB 3.0 de ALUMINIO para PC, Laptop y Android.webp" alt="HUB USB 4 Puertos">
+                    <img class="img-fluid"
+                        src="img/HUB USB 4 Puertos USB 3.0 de ALUMINIO para PC, Laptop y Android.webp"
+                        alt="HUB USB 4 Puertos">
                 </picture>
                 <h3>HUB USB 4 Puertos USB 3.0 de ALUMINIO para PC, Laptop</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 79.90</span> <span class="precioDescuento">-62%</span>
                     <br><span class="precioFinal">S/ 29.90</span>
-                </p>        
-                <button>Agregar al carrito</button>         
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 9 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Rack Soporte Flexigas de Mesa Para Doble Monitor 22 a 32 NB H180.webp" alt="Rack Soporte">
+                    <img class="img-fluid"
+                        src="img/Rack Soporte Flexigas de Mesa Para Doble Monitor 22 a 32 NB H180.webp"
+                        alt="Rack Soporte">
                 </picture>
                 <h3>Rack Soporte Flexigas de Mesa Para Doble Monitor 22 a 32 NB</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 350.00</span> <span class="precioDescuento">-26%</span>
                     <br><span class="precioFinal">S/ 259.00</span>
-                </p>    
-                <button>Agregar al carrito</button>              
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 10 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Mouse Gamer inalámbrico Micronics Ranger M822x 7Leds.webp" alt="Mouse Gamer">
+                    <img class="img-fluid" src="img/Mouse Gamer inalámbrico Micronics Ranger M822x 7Leds.webp"
+                        alt="Mouse Gamer">
                 </picture>
                 <h3>Mouse Gamer inalámbrico Micronics Ranger M822x 7Leds</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 100.00</span> <span class="precioDescuento">-25%</span>
                     <br><span class="precioFinal">S/ 75.00</span>
-                </p>     
-                <button>Agregar al carrito</button>              
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 11 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Mouse Pad Gamer Xl Waterproof 90x40cm Pad.webp" alt="Mouse Pad Gamer">
+                    <img class="img-fluid" src="img/Mouse Pad Gamer Xl Waterproof 90x40cm Pad.webp"
+                        alt="Mouse Pad Gamer">
                 </picture>
                 <h3>Mouse Pad Gamer Xl Waterproof 90x40cm Pad</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 49.99</span> <span class="precioDescuento">-40%</span>
                     <br><span class="precioFinal">S/ 29.99</span>
-                </p>       
-                <button>Agregar al carrito</button>            
+                </p>
+                <button>Agregar al carrito</button>
             </article>
 
             <!-- Articulo 12 -->
-            <article>                
+            <article class="col">
                 <picture>
-                    <img class="imgProduct" src="img/Mesa plegable portátil para Laptop con Ranura y Posavaso.webp" alt="Mesa plegable portátil">
+                    <img class="img-fluid" src="img/Mesa plegable portátil para Laptop con Ranura y Posavaso.webp"
+                        alt="Mesa plegable portátil">
                 </picture>
                 <h3>Mesa plegable portátil para Laptop con Ranura y Posavaso</h3>
-                <p> 
+                <p>
                     <span class="precioOriginal">S/ 80.00</span> <span class="precioDescuento">-68%</span>
                     <br><span class="precioFinal">S/ 24.90</span>
-                </p>    
-                <button>Agregar al carrito</button>               
-            </article>                
+                </p>
+                <button>Agregar al carrito</button>
+            </article>
         </section>
     </main>
 
@@ -201,5 +232,11 @@
         Created by Gonzalo Tejada Studios --- 2023
     </footer>
 
+    <!-- Aqui se ejecutan las instrucciones Javascript -->
+
+    <!-- cargando funciones de bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
